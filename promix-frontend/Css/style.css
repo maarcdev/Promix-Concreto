@@ -1,10 +1,13 @@
+
+/* Header Styles   */
+
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .header {
-    background-color: #fff;
+    background-color: #ffffff;
     padding-block: 1rem;
 }
 
@@ -40,6 +43,8 @@
     border-radius: 10px;
 }
 
+/* Button Styles   */
+
 .btn {
     background-color: #fb6c04;
     color: #fff;
@@ -50,13 +55,20 @@
 }
 
 .btn:hover {
-    background-color: #c25503;
+    background-color: #c25503 .3s ease;
 }
+
+/* Hero Section Styles   */
 
 .hero {
     min-height: 80vh;
     display: flex;
     align-items: center;
+
+    background-image: url("https://promixconcreto.com.br/wp-content/uploads/2026/06/hero.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
 }
 
 .container {
@@ -72,8 +84,17 @@
     margin-top: 1rem;
 }
 
-.hero {
-    background-image: url("https://promixconcreto.com.br/wp-content/uploads/2026/06/hero.png");
-    background-repeat: no-repeat;
-    background-position: center right;
+/* Services Section Styles   */
+
+.service-card {
+    background-color: #c25503;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
 }
